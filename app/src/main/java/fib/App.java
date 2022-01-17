@@ -14,6 +14,10 @@ public class App {
     }
 
     public static void main(String[] args) {
+        if (args.length != 1) {
+            System.err.println("One argument required");
+            return;
+        }
         int n = Integer.parseInt(args[0]);
         System.out.println(fib(n));
     }
